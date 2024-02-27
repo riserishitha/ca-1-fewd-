@@ -9,17 +9,16 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    height: 880px;
+    height: 100%;
 }
 .side, .main{
     height: 100%;
 }
 .main{
-    width: 1000px;
+    width: 1500px;
     background-color:rgb(32, 31, 31);
     color: white;
     height: 780px;
-    margin-left: 20p;
 }
 .side{
     width: 25%;
@@ -51,7 +50,6 @@ font-weight: 400;
     display: flex;
     align-items: center;
     margin-bottom:5px ;
-    background-color: rgb(97, 97, 97);
 }
 .left2{
     display: flex;
@@ -140,7 +138,6 @@ display: flex;
      display: flex;
      align-items: center;
      justify-content: space-evenly; 
-
 }
 .last img{
     margin-left: 10px;
@@ -154,7 +151,7 @@ display: flex;
 }
 .end{
     background-color: black;
-    width: 1350px;
+    width: 1500px;
     display: flex;
 }
 .endleft{
@@ -181,8 +178,135 @@ display: flex;
 .bottom{
     background-color:rgb(67, 224, 67);
     color: black;
-    width: 1350px;
+    width: 1500px;
 }
 i{
     margin-left: 1050px;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (min-width:250px) and (max-width: 768px) {
+    .side {
+        width: 40%;
+    }
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .left p {
+        font-size: 12px;
+    }
+
+    .head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .b {
+        margin-left: 0;
+    }
+
+    .middle {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .first img{
+        width: 4%;
+        height: 40%;
+    }
+    b{
+        font-size: 50%;
+    }
+    .op img{
+        width: 50%;
+        height: 80%;
+    }
+    .op{
+        height: 30px;
+        border-radius: 5px;
+        width: 80px;
+    }
+    .middle p{
+        font-size: 0.40rem;
+        font-weight: 0px;
+    }
+    .on {
+       height: 100px;
+       width: 50px;
+       display: grid;
+       grid-template-rows: repeat(3,1fr);
+      }
+    .on img{
+        width: 40px;
+        height: 40px;
+    }
+    .on p{
+        font-size: 0.25rem;
+    }
+    .last{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .list p{
+        font-size: 0.50rem;
+    }
+    .main{
+        height: auto;
+        z-index: -1;
+    }
+    .left1{
+        background-color: none;
+    }
+    .index p{
+        margin-left: 0px;
+        font-size: 0.50rem;
+    }
+    #i2{
+        margin-left: 20px;
+        width: 50px;
+        margin-top: 0px;
+        height: 30px;
+    }
+    .end{
+        width: 370px;
+    }
+    .endleft img{
+        width: 30px;
+        height: 30px;
+    }
+    .endleft p{
+        font-size: 0.50rem;
+    }
+    .a{
+        margin-left: 0px;
+    }
+    .a img{
+        width: 50px;
+        height: 10px;
+    }
+    .b{
+        margin-left: 0px;
+    }
+    .bottom{
+        width: 370px;
+    }
+    i{
+        margin-left: 0px;
+    }
+    .logo{
+        width: 70px;
+    }
+    .left p{
+        margin-left: 8px;
+    }
+    .sec img{
+        width: 20px;
+        height: 20px;
+    }
+    .middle{
+        margin-left: 3px;
+        margin-right: 0px;
+    }
+    
 }
